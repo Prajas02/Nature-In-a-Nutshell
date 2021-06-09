@@ -38,6 +38,122 @@
       color: black;
       font-weight: bold
     }
+
+    .footer {
+      width: 100%;
+      position: relative;
+      height: auto;
+      background-color: #070617;
+    }
+
+    .footer .col {
+      width: 190px;
+      height: auto;
+      float: left;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      padding: 0px 20px 20px 20px;
+    }
+
+    .footer .col h1 {
+      margin: 0;
+      padding: 0;
+      font-family: inherit;
+      font-size: 12px;
+      line-height: 17px;
+      padding: 20px 0px 5px 0px;
+      color: rgba(255, 255, 255, 0.2);
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: 0.250em;
+    }
+
+    .footer .col ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer .col ul li {
+      color: #999999;
+      font-size: 14px;
+      font-family: inherit;
+      font-weight: bold;
+      padding: 5px 0px 5px 0px;
+      cursor: pointer;
+      transition: .2s;
+      -webkit-transition: .2s;
+      -moz-transition: .2s;
+    }
+
+    .social ul li {
+      display: inline-block;
+      padding-right: 5px !important;
+    }
+
+    .footer .col ul li:hover {
+      color: #ffffff;
+      transition: .1s;
+      -webkit-transition: .1s;
+      -moz-transition: .1s;
+    }
+
+    .clearfix {
+      clear: both;
+    }
+
+    @media only screen and (min-width: 1280px) {
+      .contain {
+        width: 1200px;
+        margin: 0 auto;
+      }
+    }
+
+    @media only screen and (max-width: 1139px) {
+      .contain .social {
+        width: 1000px;
+        display: block;
+      }
+
+      .social h1 {
+        margin: 0px;
+      }
+    }
+
+    @media only screen and (max-width: 950px) {
+      .footer .col {
+        width: 33%;
+      }
+
+      .footer .col h1 {
+        font-size: 14px;
+      }
+
+      .footer .col ul li {
+        font-size: 13px;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .footer .col {
+        width: 50%;
+      }
+
+      .footer .col h1 {
+        font-size: 14px;
+      }
+
+      .footer .col ul li {
+        font-size: 13px;
+      }
+    }
+
+    @media only screen and (max-width: 340px) {
+      .footer .col {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
@@ -50,7 +166,7 @@
         <path
           d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777l-3-4.5zM6.437 4.758A.5.5 0 0 0 6 4.5h-.066L8 1.401 10.066 4.5H10a.5.5 0 0 0-.424.765L11.598 8.5H11.5a.5.5 0 0 0-.447.724L12.69 12.5H3.309l1.638-3.276A.5.5 0 0 0 4.5 8.5h-.098l2.022-3.235a.5.5 0 0 0 .013-.507z" />
       </svg>
-      <a class="navbar-brand" href="index.html">Nature</a>
+      <a class="navbar-brand" href="#">Nature</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -58,7 +174,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="https://prajas02.github.io/Nature-In-a-Nutshell/index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="myfile.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
@@ -215,11 +331,9 @@
       <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
         aria-labelledby="panelsStayOpen-headingOne">
         <div class="accordion-body">
-          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
+          The words nature and natural are used for all the things that are normally not made by humans.
+          Nature, in the broadest sense, is the natural, physical, material world or universe.<strong>In simpler worlds
+            everything around us is Nature.</strong>
         </div>
       </div>
     </div>
@@ -227,17 +341,17 @@
       <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-          Different Components
+          Origin Of The Word Nature
         </button>
       </h2>
       <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
         aria-labelledby="panelsStayOpen-headingTwo">
         <div class="accordion-body">
-          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
+          The word nature is borrowed from the Old French nature and is derived from the Latin word natura, or
+          "essential qualities, innate disposition", and in ancient times, literally meant "birth". In ancient
+          philosophy, natura is mostly used as the Latin translation of the Greek word physis (φύσις), which originally
+          related to the intrinsic characteristics that plants, animals, and other features of the world develop of
+          their own accord.
         </div>
       </div>
     </div>
@@ -252,18 +366,17 @@
       <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
         aria-labelledby="panelsStayOpen-headingThree">
         <div class="accordion-body">
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
+          Things like weather, organisms, landforms, celestial bodies and much more are part of nature. Scientists study
+          the way the parts of nature work. Things that have been made by people are said to be man-made or called
+          artifacts.Here we will try to explain these concepts in as much simpler and short way that it can be
+          understable by all. For Starters check out the below Cards to start learning.
         </div>
       </div>
     </div>
   </div>
   <!--alert-->
   <div class="alert alert-primary alert-warning alert-dismissible fade show" id="ani" role="alert">
-    A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    <a href="Solar.html" class="alert-link">Check ou brand new page <strong>Solar Eclipse-In A Nutshell</strong></a>.
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
   <!-- cards about different topics-->
@@ -339,6 +452,31 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <hr>
+  <div class="footer">
+    <div class="contain">
+      
+      <div class="col">
+        <h1>Accounts</h1>
+        <ul>
+          <li>Made By Prajas Kulkarni</li>
+          <li>2021</li>
+          
+        </ul>
+      </div>
+      
+        
+      <div class="col social">
+        <h1>Social</h1>
+        <ul>
+          <li>Mail<img src="https://th.bing.com/th/id/R83d81689402c8345a0b7d2a72233229c?rik=VNf3ky00iVqUjA&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fiynque%2fios7-style%2f1024%2fMail-icon.png&ehk=kfPhz38jE15VFOmrViBXjilpY48sPs5m8eG1XrjURC0%3d&risl=&pid=ImgRaw" width="32" style="width: 32px;"></li>
+          <li>Git Hub <a href=""><img src="https://htxt.co.za/wp-content/uploads/2018/11/github-logo.jpg" width="32" style="width: 32px;"></a></li>
+          
+        </ul>
+      </div>
+      <div class="clearfix"></div>
     </div>
   </div>
   <!-- Optional JavaScript; choose one of the two! -->
