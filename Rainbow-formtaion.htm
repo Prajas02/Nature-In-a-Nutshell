@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!--animation class-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--tailwind-->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Rainbow-In a Nutshell</title>
+    <style>
+    </style>
+</head>
+
+<body class="bg-gray-400">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+        <div class="container-fluid">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tree"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777l-3-4.5zM6.437 4.758A.5.5 0 0 0 6 4.5h-.066L8 1.401 10.066 4.5H10a.5.5 0 0 0-.424.765L11.598 8.5H11.5a.5.5 0 0 0-.447.724L12.69 12.5H3.309l1.638-3.276A.5.5 0 0 0 4.5 8.5h-.098l2.022-3.235a.5.5 0 0 0 .013-.507z" />
+            </svg>
+            <a class="navbar-brand" href="index.html">Nature</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Topic's
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="forms.html" tabindex="-1" aria-disabled="false">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success bg-light" id="btnn" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <div class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</div>
+                    <div class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--login modal-->
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="mail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="mail" aria-describedby="emailHelp"
+                                    required>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="pass" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="pass" required>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" onclick="myfunction()" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--sign up modal-->
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" required>
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="cexampleInputPassword1" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide mx-10" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="rainbow.jfif" class="d-block w-100"  alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="my-10 fs-1 fst-bold,italic">
+                        <h2>Rainbow Formation-In A Nutshell</h2>
+                    </div>
+                    <p class="fst-bold">Here we will try to explain the beautiful formation of rainbow in as simple language as possible.So
+                        Let's get
+                        into it.</p>
+                </div>
+            </div>
+        </div>
+        <!--our main body-->
+        <div class="bg-gray-500 my-4 mx-10" style="border-radius: 10px;">
+            <div class="container px-10 py-4">
+                <h2 class="fs-3">What exactly is a Rainbow?</h1>
+                    <p class="fs-6 py-2">Rainbow is a meteorological phenomenon that is caused by reflection, refraction and dispersion of white light in water droplets resulting in a spectrum of light appearing in the sky. It takes the form of a multicoloured circular arc. Rainbows caused by sunlight always appear in the section of sky directly opposite the Sun.</p>
+        <p class="fs-6 py-2">
+                     Rainbows can be full circles. However, the observer normally sees only an arc formed by illuminated droplets above the ground.(As you can see in the image below).</p>
+                    
+                    <hr>
+                    <img class="w-3/4 h-40 px-30" src="https://www.zastavki.com/pictures/originals/2013/Nature___Rivers_and_lakes_Rainbow_over_the_mountain_lake_041803_.jpg" width="800px" height="100px">
+                    <small>Image of a rainbow during light rain showers in mountain regions.</small>
+                    <hr>
+                    <h2 class="fs-3">What are the componets of a Rainbow?</h2>
+                    <p class="fs-6 py-2">There are 4 types of SOlar Eclipse in total:-A rainbow is formed from a white beam of of light(as noted above).This white light is actually a mixture of a seven colours of light. These colours are given below:-
+                        <span id="color">Violet</span>
+                        <span id="color1">Indigo</span>
+                        <span id="color2">Blue</span>
+                        <span id="color3">Green</span>
+                        <span id="color4">Yellow</span>
+                        <span id="color5">Orange</span>
+                        <span id="color6">Red</span>
+                        These seven colours above comprises the spectrum of light. Together in short they are reffered to as <strong>"VIBGYOR"</strong>with each letter represting the first letter of the color order wise.
+                    </p>
+                    <hr>
+                    <h2 class="fs-3">How a Rainbow is formed.</h2>
+                    <p class="fs-6 py-4">Conditions required for the formation of rainbow are:
+                        <ul class="list-decimal">
+                        <li>Presence of raindrops.</li>
+                       <li>Sun should be at your back to observe the rainbow.</li>
+                    </ul></p>
+
+                    <h2 class="fs-4">Process of rainbow formation</h2>
+                    <p class="fs-6 py-2"><ul class="list-decimal">
+                        <li>The raindrops present in the sky acts as many smaller prisms in the sky.</li>
+                        <li>As the white light enters and leaves the raindrops, the different colored rays are refracted by different amounts due to which an arc of seven colors (VIBGYOR) is formed in the sky.(dispersion of white light)</li>
+                        <li>A more detailed explanation is given in the figure below:-</li>
+                    </ul></p>
+                    <img class="image" src="https://images.topperlearning.com/topper/tinymce/imagemanager/files/e8ce8907826d64e6af3618c07e08a47856cda9b1ba8154.04523941Livechat24.02.16.png" alt="rainbow formation">
+                    <hr>
+                    <h2 class="fs-4">Explanation</h2>
+                    <p class="fs-6 py-2">
+                        <ol class="list-decimal">
+                            <li>A ray of white light(yellow-colored in the figure) enters the rain droplet.</li>
+                            <li>On touching the surface of the droplet, it undergoes refraction and is dispersed into its seven components to form a spectrum of light. (for simplicity only two colors 'red' and 'violet' are shown).
+                            </li>
+                            <li>This spectrum of light undergoes total internal reflection on striking the internal surface of the droplet and finally refracts again at the surface of the droplet and moves out.
+                            </li>
+                            <li>Due to this refraction, the rainbow is formed at the opposite side is the sun.</li>
+                        </ol>
+        
+                    </p>
+                    <h2 class="fs-4 py-2">Some myths and beliefs about rainbow</h2>
+                    <p class="fs-6 py-3">In myths and legends around the world the rainbow has played a magical, otherworldly symbol, whether as a bridge linking man to heaven, a messenger from the gods, a promise from God, an archer’s bow used by the gods, or a god-like serpent that could be ridden to the heavens. Below are some of the myths and legends associated with the rainbow:
+                    <ul class="list-disc">
+                        <li>It is believed by the people that at the place where the arc of rainbow touches the ground a pot full of golds and many invaluable treasures are hidden.</li>
+                        <li>The rainbow is depicted as an archer's bow in Hindu mythology. Indra, the god of thunder and war, uses the rainbow to shoot arrows of lightning trying to protect humanity from the evil forces(or rakshas).</li>
+                        <li>The Rainbow Serpent myth is believed by some to represent the world’s oldest continuous religious tradition in australia.According to the myth, the Rainbow Serpent descended from that larger universe being visible as a dark streak in the Milky Way. It revealed itself to people in this world as a rainbow as it moved through water and the rain, shaping landscapes, naming and singing of places, dreaming them into existence by showing a rainbow(sign of joy and happiness). </li>
+                        <li>In Mayan mythology the serpent was also a very important social and religious symbol. Mayan mythology describes serpents as being the vehicles by which celestial bodies, such as the sun and stars, cross the heavens. They could do so by walking on the rainbow which lead them straight to the doors of heavens.</li>
+                    </ul>
+                    </p>
+
+
+            </div>
+        </div>
+
+        <!--My footer-->
+        <footer class="text-gray-600 body-font">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span class="ml-3 text-xl">Nature</span>
+                </a>
+                <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-600 sm:py-2 sm:mt-0 mt-4">©
+                    2020
+                    Project —
+                    <a href="mailto:zero20206@outlook.com? subject=subject text" class="text-gray-800 ml-1"
+                        rel="noopener noreferrer" target="_blank">@Prajas Kulkarni</a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                    <a class="text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </footer>
+
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
